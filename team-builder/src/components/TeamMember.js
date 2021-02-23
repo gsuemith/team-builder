@@ -1,13 +1,13 @@
-
+import { Card } from 'reactstrap'
 
 const TeamMember = ({ info }) => {
     const { name, email, role } = info
     return (
-        <div>
-            <h2>{name}</h2>
-            <h3>Email: {email}</h3>
-            <h3>Role: {role}</h3>
-        </div>
+        <Card className="m-3 p-3 shadow">
+            <h3>{name}</h3>
+            <h5>Email: <span className="text-muted">{email}</span></h5>
+            <h5>Role: <span className="text-muted">{role}</span></h5>
+        </Card>
     )
 }
 
